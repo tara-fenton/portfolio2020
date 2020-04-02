@@ -1,11 +1,7 @@
-// const width = 960,
-//   height = 500,
-//   padding = 4;
-
 const width = window.innerWidth,
   height = window.innerHeight,
   padding = 4;
-console.log(width, height);
+
 const createNodes = json => {
   return json.map((d, i) => {
     return {

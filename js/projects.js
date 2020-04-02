@@ -3,6 +3,7 @@ const addProject = (projects, p) => {
   project.setAttribute("class", "project");
 
   const imageDiv = document.createElement("div");
+  imageDiv.setAttribute("class", "image-container");
   const image = document.createElement("img");
   image.setAttribute("src", "images/" + p.image);
   image.setAttribute("alt", p.title);
