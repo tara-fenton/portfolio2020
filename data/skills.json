@@ -1,0 +1,176 @@
+[{
+  "title": "Dummy",
+  "description": "Node used to make animation",
+  "display_id": "0",
+  "featured": "",
+  "image": "",
+  "level": ""
+},
+{
+  "title": "Angular",
+  "description": "Details",
+  "display_id": "1",
+  "featured": "false",
+  "image": "angularjs-original.svg",
+  "level": "5"
+},
+{
+  "title": "AWS",
+  "description": "Details",
+  "display_id": "2",
+  "featured": "false",
+  "image": "amazonwebservices-original.svg",
+  "level": "5"
+},
+{
+  "title": "CSS",
+  "description": "Details",
+  "display_id": "3",
+  "featured": "false",
+  "image": "css3-original.svg",
+  "level": "5"
+},
+{
+  "title": "D3",
+  "description": "Details",
+  "display_id": "19",
+  "featured": "false",
+  "image": "d3js-original.svg",
+  "level": "5"
+},
+{
+  "title": "Docker",
+  "description": "Details",
+  "display_id": "4",
+  "featured": "false",
+  "image": "docker-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Express",
+  "description": "Details",
+  "display_id": "5",
+  "featured": "false",
+  "image": "express-original-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Git",
+  "description": "Details",
+  "display_id": "20",
+  "featured": "false",
+  "image": "git-original.svg",
+  "level": "5"
+},
+{
+  "title": "Github",
+  "description": "Details",
+  "display_id": "6",
+  "featured": "false",
+  "image": "github-original.svg",
+  "level": "5"
+},
+{
+  "title": "HTML",
+  "description": "Details",
+  "display_id": "7",
+  "featured": "false",
+  "image": "html5-original.svg",
+  "level": "5"
+},
+{
+  "title": "Illustrator",
+  "description": "Details",
+  "display_id": "8",
+  "featured": "false",
+  "image": "illustrator-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Java",
+  "description": "Details",
+  "display_id": "9",
+  "featured": "false",
+  "image": "java-original.svg",
+  "level": "5"
+},
+{
+  "title": "JavaScript",
+  "description": "Details",
+  "display_id": "10",
+  "featured": "false",
+  "image": "javascript-plain.svg",
+  "level": "5"
+},
+{
+  "title": "jQuery",
+  "description": "Details",
+  "display_id": "11",
+  "featured": "false",
+  "image": "jquery-original.svg",
+  "level": "5"
+},
+{
+  "title": "mySQL",
+  "description": "Details",
+  "display_id": "21",
+  "featured": "false",
+  "image": "mysql-original.svg",
+  "level": "5"
+},
+{
+  "title": "Node.js",
+  "description": "Details",
+  "display_id": "12",
+  "featured": "false",
+  "image": "nodejs-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Photoshop",
+  "description": "Details",
+  "display_id": "13",
+  "featured": "false",
+  "image": "photoshop-plain.svg",
+  "level": "5"
+},
+{
+  "title": "PHP",
+  "description": "Details",
+  "display_id": "14",
+  "featured": "false",
+  "image": "php-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Postgres",
+  "description": "Details",
+  "display_id": "15",
+  "featured": "false",
+  "image": "postgresql-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Rails",
+  "description": "Details",
+  "display_id": "16",
+  "featured": "false",
+  "image": "rails-plain.svg",
+  "level": "5"
+},
+{
+  "title": "React",
+  "description": "Details",
+  "display_id": "17",
+  "featured": "false",
+  "image": "react-original.svg",
+  "level": "5"
+},
+{
+  "title": "Ruby",
+  "description": "Details",
+  "display_id": "18",
+  "featured": "false",
+  "image": "ruby-original.svg",
+  "level": "5"
+}]
