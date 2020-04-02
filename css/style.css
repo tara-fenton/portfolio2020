@@ -35,7 +35,6 @@ nav a {
 @media only screen and (max-width: 768px) {
   nav {
     height: auto;
-    width: 100%;
     flex-direction: column;
   }
   nav a {
