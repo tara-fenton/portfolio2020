@@ -1,72 +1,19 @@
-const addSkill = (skills, s) => {
-  const skill = document.createElement("div");
-  skill.setAttribute("class", "skill");
+const width = 960,
+  height = 500,
+  padding = 4;
 
-  const imageDiv = document.createElement("div");
-  const image = document.createElement("img");
-  image.setAttribute("src", "images/logos/" + s.image);
-  image.setAttribute("alt", s.title);
-  image.setAttribute("class", "skill-image");
-  imageDiv.appendChild(image);
+const startForce = nodes => {
+  const force = d3.layout
+    .force()
+    .gravity(0.05)
+    .charge(function(d, i) {
+      return i ? 0 : -3000;
+    })
+    .nodes(nodes)
+    .size([width, height]);
 
-  //   const rightDiv = document.createElement("div");
-  //   rightDiv.setAttribute("class", "right");
-
-  //   const titleDiv = document.createElement("div");
-  //   const title = document.createTextNode(s.title);
-  //   titleDiv.setAttribute("class", "title");
-  //   titleDiv.appendChild(title);
-
-  //   const techonologiesDiv = document.createElement("span");
-  //   const techonologies = document.createTextNode(s.techonologies);
-  //   techonologiesDiv.setAttribute("class", "tech");
-  //   techonologiesDiv.appendChild(techonologies);
-
-  //   const descriptionDiv = document.createElement("p");
-  //   const description = document.createTextNode(s.description);
-  //   descriptionDiv.setAttribute("class", "description");
-  //   descriptionDiv.appendChild(description);
-
-  //   const div = document.createElement("div");
-
-  //   const githubDiv = document.createElement("span");
-  //   const githubLink = document.createElement("a");
-  //   const github = document.createTextNode("github");
-  //   githubLink.appendChild(github);
-  //   githubLink.href = s.github;
-  //   githubLink.target = "_blank";
-  //   githubDiv.prepend(githubLink);
-
-  //   const urlDiv = document.createElement("span");
-  //   const urlLink = document.createElement("a");
-  //   const url = document.createTextNode("url");
-  //   urlLink.appendChild(url);
-  //   urlLink.href = s.url;
-  //   urlLink.target = "_blank";
-  //   urlDiv.setAttribute("class", "url");
-  //   urlDiv.prepend(urlLink);
-
-  //   const websiteDiv = document.createElement("span");
-  //   const websiteLink = document.createElement("a");
-  //   const website = document.createTextNode("website");
-  //   websiteLink.appendChild(website);
-  //   websiteLink.href = s.website;
-  //   websiteLink.target = "_blank";
-  //   websiteDiv.setAttribute("class", "website");
-  //   websiteDiv.prepend(websiteLink);
-
-  //   rightDiv.appendChild(titleDiv);
-  //   rightDiv.appendChild(techonologiesDiv);
-  //   rightDiv.appendChild(descriptionDiv);
-  //   rightDiv.appendChild(div);
-  //   div.appendChild(githubDiv);
-  //   div.appendChild(urlDiv);
-  //   div.appendChild(websiteDiv);
-
-  skill.appendChild(imageDiv);
-  //   skill.appendChild(rightDiv);
-
-  skills.appendChild(skill);
+  force.start();
+  return force;
 };
 
 const addSkills = () => {
@@ -74,10 +21,7 @@ const addSkills = () => {
     response.json().then(json => {
       const skills = document.getElementById("skills");
       skills.setAttribute("class", "skills");
-      console.log(json);
-
-      var width = 960,
-        height = 500;
+      console.log("json ", json);
 
       var svg = d3
         .select("body")
@@ -95,18 +39,10 @@ const addSkills = () => {
       // color = d3.scale.category10();
       root.radius = 0;
       root.fixed = true;
-      console.log(nodes);
-      var force = d3.layout
-        .force()
-        .gravity(0.05)
-        .charge(function(d, i) {
-          return i ? 0 : -3000;
-        })
-        .nodes(nodes)
-        .size([width, height]);
-      force.start();
+      console.log("nodes : ", nodes);
 
-      var padding = 4;
+      const force = startForce(nodes);
+
       /// here the circles are created and the fill is the color
       svg
         .selectAll("image")
@@ -116,7 +52,6 @@ const addSkills = () => {
         .attr("id", function(d, i) {
           return "skill" + i;
         })
-        // .attr("width", 150)
         .attr("width", function(d) {
           return d.radius * 2 - padding;
         })
@@ -200,10 +135,6 @@ const addSkills = () => {
           return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
         };
       }
-
-      //   json.map(j => {
-      //     addSkill(skills, j);
-      //   });
     });
   });
 };
