@@ -115,16 +115,16 @@ const addCircle = (svg, nodes) => {
 
   return svg;
 };
-
 const addSkills = () => {
+  const content = document.getElementById("content");
+  const skills = document.createElement("div");
+  skills.setAttribute("class", "skills");
+  content.appendChild(skills);
+
   fetch("https://tarafenton.com/data/skills.json").then(response => {
     response.json().then(json => {
-      const skills = document.getElementById("skills");
-      skills.setAttribute("class", "skills");
-      console.log("json ", json);
-
-      var svg = d3
-        .select("body")
+      const svg = d3
+        .select(".skills")
         .append("svg")
         .attr("width", width)
         .attr("height", height);
