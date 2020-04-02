@@ -29,39 +29,48 @@ const addProject = (projects, p) => {
 
   const div = document.createElement("div");
 
-  const githubDiv = document.createElement("span");
-  const githubLink = document.createElement("a");
-  const github = document.createTextNode("github");
-  githubLink.appendChild(github);
-  githubLink.href = p.github;
-  githubLink.target = "_blank";
-  githubDiv.prepend(githubLink);
+  if (p.github) {
+    const githubDiv = document.createElement("span");
+    const githubLink = document.createElement("a");
+    const github = document.createTextNode("github");
+    githubLink.appendChild(github);
+    githubLink.href = p.github;
+    githubLink.target = "_blank";
+    githubDiv.prepend(githubLink);
+    githubDiv.style.padding = "0 10px 0 0";
+    div.appendChild(githubDiv);
+  }
 
-  const urlDiv = document.createElement("span");
-  const urlLink = document.createElement("a");
-  const url = document.createTextNode("url");
-  urlLink.appendChild(url);
-  urlLink.href = p.url;
-  urlLink.target = "_blank";
-  urlDiv.setAttribute("class", "url");
-  urlDiv.prepend(urlLink);
+  if (p.url) {
+    const urlDiv = document.createElement("span");
+    const urlLink = document.createElement("a");
+    const url = document.createTextNode("app");
+    urlLink.appendChild(url);
+    urlLink.href = p.url;
+    urlLink.target = "_blank";
+    urlDiv.setAttribute("class", "url");
+    urlDiv.style.padding = "0 10px 0 0";
+    urlDiv.prepend(urlLink);
+    div.appendChild(urlDiv);
+  }
 
-  const websiteDiv = document.createElement("span");
-  const websiteLink = document.createElement("a");
-  const website = document.createTextNode("website");
-  websiteLink.appendChild(website);
-  websiteLink.href = p.website;
-  websiteLink.target = "_blank";
-  websiteDiv.setAttribute("class", "website");
-  websiteDiv.prepend(websiteLink);
+  if (p.website) {
+    const websiteDiv = document.createElement("span");
+    const websiteLink = document.createElement("a");
+    const website = document.createTextNode("website");
+    websiteLink.appendChild(website);
+    websiteLink.href = p.website;
+    websiteLink.target = "_blank";
+    websiteDiv.setAttribute("class", "website");
+    websiteDiv.style.padding = "0 10px 0 0";
+    websiteDiv.prepend(websiteLink);
+    div.appendChild(websiteDiv);
+  }
 
   rightDiv.appendChild(titleDiv);
   rightDiv.appendChild(techonologiesDiv);
   rightDiv.appendChild(descriptionDiv);
   rightDiv.appendChild(div);
-  div.appendChild(githubDiv);
-  div.appendChild(urlDiv);
-  div.appendChild(websiteDiv);
 
   project.appendChild(imageDiv);
   project.appendChild(rightDiv);
