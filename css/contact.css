@@ -1,50 +1,41 @@
 .contact {
-  padding: 40px;
-  margin: 0 auto;
   font-size: 22px;
   display: flex;
+  justify-content: center;
+  padding: 50px;
 }
-
 .contact-item {
   display: flex;
   align-items: center;
   padding: 6px 0;
-  /* border: 1px solid black; */
 }
-
+.right {
+  padding: 24px 0 0 50px;
+}
 .icon {
   padding: 0 14px 0 0;
-  /* background-color: black; */
-}
-.icon {
   width: 20px;
   height: 20px;
-}
-.linkedin {
-  padding: 0 14px 6px 0;
-}
-.github {
-  padding: 0 14px 2px 0;
 }
 a {
   text-decoration: none;
   color: black;
 }
-
 a:hover {
   color: green;
 }
 
-.right {
-  align-items: flex-start;
-  padding: 0 0 0 50px;
-}
-
 @media only screen and (max-width: 768px) {
   .contact {
-    display: block;
+    flex-direction: column;
+  }
+  .contact-item {
+    /* justify-content: center; */
+  }
+  .icon {
   }
   .right {
+    justify-content: center;
     padding: 0;
   }
 }
