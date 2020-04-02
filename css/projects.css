@@ -1,6 +1,7 @@
 .projects {
   font-size: 20px;
   display: flex;
+  flex-direction: column;
   width: 600px;
   margin: 30px auto;
   padding: 50px;
@@ -8,13 +9,15 @@
   padding: 20px;
 }
 
-/* .project {
-  
-} */
+.project {
+  border: 10px solid black;
+  padding: 10px;
+}
 .project-image {
   width: 200px;
   height: 200px;
   border: 2px solid black;
+  float: left;
 }
 .description {
   font-size: 12px;
