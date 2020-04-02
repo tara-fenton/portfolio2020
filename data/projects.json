@@ -1,8 +1,7 @@
 [
   {
     "title": "Horology",
-    "description":
-      "An e-commerce app for selling luxury watches. Features include account registration and user authentication, product filters, a wishlist, cart, checkout via Stripe payments, and admin page for shop owner to manage users and products.",
+    "description": "An e-commerce app for selling luxury watches. Features include account registration and user authentication, product filters, a wishlist, cart, checkout via Stripe payments, and admin page for shop owner to manage users and products.",
     "display_id": "1",
     "featured": "false",
     "github": "https://github.com/chingu-voyages/bears-project-9",
@@ -13,8 +12,7 @@
   },
   {
     "title": "Beer Tapper",
-    "description":
-      "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
+    "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
     "display_id": "2",
     "featured": "false",
     "github": "https://github.com/tara-fenton/beer-tapper-js/tree/master/public",
@@ -24,8 +22,7 @@
   },
   {
     "title": "Brooks Brothers",
-    "description":
-      "An iPad app for Brooks Brothers' empolyee training used to educate all retail teams from sales floor to executive-level. Debugged application with tech team from distribution to user flow.",
+    "description": "An iPad app for Brooks Brothers' empolyee training used to educate all retail teams from sales floor to executive-level. Debugged application with tech team from distribution to user flow.",
     "display_id": "3",
     "featured": "false",
     "github": "",
@@ -35,8 +32,7 @@
   },
   {
     "title": "Victoria's Secret",
-    "description":
-      "An iPad app for Victoria's Secret's empolyee training used to educate all retail teams from sales floor to executive-level. Updated bi-monthly with new assets and features.",
+    "description": "An iPad app for Victoria's Secret's empolyee training used to educate all retail teams from sales floor to executive-level. Updated bi-monthly with new assets and features.",
     "display_id": "4",
     "featured": "false",
     "github": "",
@@ -46,8 +42,7 @@
   },
   {
     "title": "Marvel Entertainment",
-    "description":
-      "Flash applications throughout Marvel site using AS3. Created custom API to deliver video ads for games on Marvel and Marvel Kids. Supported relaunch of Marvel.com using Zend framework coded in PHP, HTML, CSS and JavaScript.",
+    "description": "Flash applications throughout Marvel site using AS3. Created custom API to deliver video ads for games on Marvel and Marvel Kids. Supported relaunch of Marvel.com using Zend framework coded in PHP, HTML, CSS and JavaScript.",
     "display_id": "5",
     "featured": "false",
     "github": "",

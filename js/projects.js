@@ -125,5 +125,33 @@ const addProject = () => {
             </div>
           </div> */
 }
+// document.body.onload = addProject;
+const addProjects = () => {
+  // var text =
+  // '{ "name":"John", "age":"function () {return 30;}", "city":"New York"}';
+  var obj = fetch("data/projects.json").then(r => {
+    r.json();
+    console.log(r);
+  });
+  // obj.age = eval("(" + obj.age + ")");
+  const title = document.createTextNode("Horology");
+  document.getElementById("projects").innerHTML = obj.title;
+  const projects = document.getElementById("projects");
+  // const title = document.createTextNode("test");
+  projects.setAttribute("class", "projects");
+  // var text = fetch("./data/projects.json")
+  //   .then(r => r.json())
+  //   .then(json => {
+  //     console.log("in the then");
+  //     var obj = JSON.parse(json);
+  //     console.log(obj);
+  //     // obj.title = eval("(" + obj.title + ")");
 
-document.body.onload = addProject;
+  //     document.getElementById("projects").innerHTML =
+  //       obj.description + ", " + obj.title;
+  //   });
+  // var text =
+  //   '{ "name":"John", "age":"function () {return 30;}", "city":"New York"}';
+};
+
+document.body.onload = addProjects;
