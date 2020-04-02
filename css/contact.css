@@ -1,0 +1,45 @@
+.contact {
+  padding: 40px;
+  margin: 0 auto;
+  font-size: 22px;
+  display: flex;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  /* border: 1px solid black; */
+}
+
+.icon {
+  padding: 0 14px 0 0;
+}
+.linkedin {
+  padding: 0 14px 6px 0;
+}
+.github {
+  padding: 0 14px 2px 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+.right {
+  align-items: flex-start;
+  padding: 0 0 0 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    display: block;
+  }
+  .right {
+    padding: 0;
+  }
+}
