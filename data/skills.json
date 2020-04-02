@@ -130,5 +130,17 @@
     "featured": "false",
     "image": "ruby-original.svg",
     "level": "5"
+  },
+  {
+    "title": "Mocha",
+    "featured": "false",
+    "image": "mocha-plain.svg",
+    "level": "5"
+  },
+  {
+    "title": "Vue",
+    "featured": "false",
+    "image": "vuejs-original.svg",
+    "level": "5"
   }
 ]

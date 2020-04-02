@@ -14,6 +14,11 @@
 
 .icon {
   padding: 0 14px 0 0;
+  /* background-color: black; */
+}
+.icon {
+  width: 20px;
+  height: 20px;
 }
 .linkedin {
   padding: 0 14px 6px 0;
