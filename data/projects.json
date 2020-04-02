@@ -2,7 +2,6 @@
   {
     "title": "Overtime",
     "description": "Constructed an AWS microservices solution for syncing data from the YouTube platform into a PostgreSQL database with custom REST API endpoints consumed by company's public website. Full stack applications utilized internally using React, Node and PostgreSQL. ",
-    "display_id": "1",
     "featured": "true",
     "github": "",
     "image": "overtime.png",
@@ -13,7 +12,6 @@
   {
     "title": "Horology",
     "description": "An e-commerce app for selling luxury watches. Features include account registration and user authentication, product filters, a wishlist, cart, checkout via Stripe payments, and admin page for shop owner to manage users and products.",
-    "display_id": "1",
     "featured": "false",
     "github": "https://github.com/chingu-voyages/bears-project-9",
     "image": "horology.png",
@@ -24,7 +22,6 @@
   {
     "title": "Beer Tapper",
     "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
-    "display_id": "2",
     "featured": "false",
     "github": "https://github.com/tara-fenton/beer-tapper-js/tree/master/public",
     "image": "beer.png",
@@ -34,7 +31,6 @@
   {
     "title": "Brooks Brothers",
     "description": "An iPad app for Brooks Brothers' empolyee training used to educate all retail teams from sales floor to executive-level. Debugged application with tech team from distribution to user flow.",
-    "display_id": "3",
     "featured": "true",
     "github": "",
     "image": "brooks.png",
@@ -44,7 +40,6 @@
   {
     "title": "Victoria's Secret",
     "description": "An iPad app for Victoria's Secret's empolyee training used to educate all retail teams from sales floor to executive-level. Updated bi-monthly with new assets and features.",
-    "display_id": "4",
     "featured": "true",
     "github": "",
     "image": "vs.png",
@@ -54,7 +49,6 @@
   {
     "title": "Marvel Entertainment",
     "description": "Flash applications throughout Marvel site using AS3. Created custom API to deliver video ads for games on Marvel and Marvel Kids. Supported relaunch of Marvel.com using Zend framework coded in PHP, HTML, CSS and JavaScript.",
-    "display_id": "5",
     "featured": "true",
     "github": "",
     "website": "http://marvel.com",
