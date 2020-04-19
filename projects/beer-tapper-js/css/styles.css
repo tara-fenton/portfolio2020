@@ -1,54 +1,106 @@
 @import url("https://fonts.googleapis.com/css?family=Mina");
-/*div to hold all elements*/
+
 html {
   font-family: "Mina";
-  background-color: black;
+  background-color: #b1dbdf;
+  padding: 40px;
 }
-#container {
-  background-color: black;
-  width: 600px;
-  height: 600px;
-  position: relative;
-  margin: 0 auto;
+h2 {
+  display: inline-block;
+  padding: 25px 38px;
+}
+h3 {
+  color: yellow;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+button {
+  font-family: "Mina";
+  background-color: #9bc1c3;
+  border: none;
+  color: #7c6a51;
+  /*padding: 5px 15px;*/
+  font-size: 34px;
+  font-weight: bold;
+}
+/*to remove the blue highlight on button*/
+button:focus,
+input:focus {
+  outline: 0;
+}
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /*BAR */
 .bar {
-  background-color: brown;
+  background-color: #60513f;
   width: 400px;
   height: 40px;
   position: relative;
 }
+.bar-highlight {
+  background-color: #7c6a51;
+  width: 400px;
+  height: 8px;
+  position: relative;
+}
 /*BARTENDER */
 #bartender {
-  background-color: purple;
-  width: 40px;
-  height: 80px; /*must be set here, tried to put it in the js*/
+  background: url(../images/bartender.svg) no-repeat;
+  width: 50px;
+  height: 150px; /*must be set here, tried to put it in the js*/
   position: absolute; /*must be absolute!*/
 }
 /*CUSTOMER */
 .customer {
-  background-color: red;
   width: 40px;
   height: 80px;
   position: absolute;
 }
 /*BEER */
-.beer {
-  background-color: yellow;
-  width: 15px;
-  height: 30px;
+.beerContainer {
   position: absolute;
-  /*  needs to be absolute */
-  display: none;
 }
 .glass {
-  background-color: white;
-  width: 15px;
-  height: 30px;
+  /* background: url(http://www.tarafenton.com/2018/codepen/images/beer.svg) no-repeat; */
+  background: url(../images/beer.svg) no-repeat;
   position: relative;
+  width: 100px;
+  height: 50px;
+  z-index: 2;
+}
+.beer {
+  background-color: yellow;
+  position: absolute;
+  width: 21px;
+  height: 1px;
+  z-index: 1;
+  top: 47px;
+  left: 8px;
+}
+/* LIVES */
+.beerLife {
+  background: url(../images/beerLife.svg) no-repeat;
+  width: 25px;
+  height: 50px;
+  position: absolute;
+}
+#lives {
+  position: absolute;
+  top: 0px;
+  left: 270px;
+  width: 100px;
+  margin: 10px auto;
 }
 /*POINTS and LEVEL DISPLAYS */
-#points, #level {
+#points,
+#level {
   font-size: 26px;
   padding: 0 0 0 15px;
   height: 30px;
@@ -60,44 +112,57 @@ html {
 }
 #level {
   top: 560px;
-  left: 560px;
+  left: 540px;
 }
-/*LIVES and END DISPLAYS */
-#lives {
-  position: absolute;
-  top: 10px;
-  left: 250px;
-  margin: 10px auto;
-  /* background-color: green; */
-  width: 100px;
-  height: 30px;
-}
-#lives .beer {
-  display: block;
-}
-#readyToServe {
-  background-color: black;
-  color: yellow;
+
+/* DISPLAYS */
+#container,
+#readyToServe,
+#beerTapper,
+#instructions,
+#end,
+#enterHighScore,
+#bonus {
+  background-color: #9bc1c3;
   width: 600px;
   height: 600px;
+  color: yellow;
+  border-radius: 25px;
+  border: 1px dotted yellow;
+}
+#container {
+  position: relative;
+  margin: 0 auto;
+}
+#readyToServe,
+#beerTapper,
+#instructions,
+#end,
+#enterHighScore,
+#bonus {
   position: absolute;
   top: 0;
 }
-#readyToServe h1 {
-  text-align: center;
-  font-size: 50px;
+#beerTapper h1,
+#readyToServe h1,
+#bonus h1 {
   position: relative;
+  text-align: center;
+}
+#beerTapper h1 {
+  top: 150px;
+  font-size: 80px;
+}
+#readyToServe h1 {
   top: 200px;
+  font-size: 50px;
 }
-#end, #enterHighScore {
-    background-color: black;
-    color: purple;
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: 0;
+#end,
+#enterHighScore {
+  color: #7c6a51;
 }
-#end h1, #enterHighScore h1 {
+#end h1,
+#enterHighScore h1 {
   text-align: center;
   font-size: 50px;
 }
@@ -105,51 +170,48 @@ html {
 #highName {
   font-size: 26px;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #9bc1c3;
   color: yellow;
-    padding: 10px;
-    border: 2px solid;
+  padding: 10px;
+  border: 2px solid;
 }
-h2 {
-  display:inline-block;
-  padding: 25px 38px;
-}
-h3 {
-  color: yellow;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-button {
-  font-family: "Mina";
-  background-color: black;
-  border: none;
-  color: purple;
-  /*padding: 5px 15px;*/
-  font-size: 34px;
-  font-weight: bold;
-}
-/*to remove the blue highlight on button*/
-button:focus, input:focus {outline:0;}
-* {
-  -webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
-#submit {
+#submitHighScore {
   position: relative;
   left: 398px;
 }
-#startGame {
-  margin: 200px 164px;
+/* start game and instructions */
+#startButton {
+  margin: 74px 0 0 164px;
 }
-#resetGame {
-  margin: 0 164px;
+#instructionsText {
+  padding: 0 30px 20px 30px;
 }
+#instructionsImages {
+  padding: 0 40px;
+}
+#instructionsImages img {
+  padding: 0 30px;
+  height: 100px;
+  width: 200px;
+}
+#closeButton {
+  margin: 157px 0 0 446px;
+}
+#instructionsButton {
+  margin: 168px 0 0 348px;
+}
+/* game over and restart */
 #gameOver {
-  color: red;
+  color: #3f3124;
 }
-
+#restartButton {
+  margin: 0px 164px;
+}
+/* bonus beers */
+.bonusBeers {
+  background: url(../images/beerLife.svg) no-repeat;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+}
