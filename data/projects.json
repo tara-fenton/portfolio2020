@@ -10,24 +10,16 @@
     "url": ""
   },
   {
-    "title": "Horology",
-    "description": "An e-commerce app for selling luxury watches. Features include account registration and user authentication, product filters, a wishlist, cart, checkout via Stripe payments, and admin page for shop owner to manage users and products.",
+    "title": "General Assembly",
+    "description": "Prepared and delivered lessons on the fundamentals of web development. Supported students with planning, writing code and debugging full stack applications.",
     "featured": "false",
-    "github": "https://github.com/chingu-voyages/bears-project-9",
-    "image": "horology.png",
-    "website": "https://horology-bear.herokuapp.com/",
+    "github": "",
+    "image": "ga.png",
+    "website": "https://generalassemb.ly/instructors/tara-fenton/19087",
     "techonologies": "React, Express, PostgreSQL",
     "url": ""
   },
-  {
-    "title": "Beer Tapper",
-    "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
-    "featured": "false",
-    "github": "https://github.com/tara-fenton/beer-tapper-js/tree/master/public",
-    "image": "beer.png",
-    "techonologies": "JavaScript, CSS",
-    "url": "projects/beer-tapper-js/"
-  },
+
   {
     "title": "Brooks Brothers",
     "description": "An iPad app for Brooks Brothers' empolyee training used to educate all retail teams from sales floor to executive-level. Debugged application with tech team from distribution to user flow.",
