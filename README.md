@@ -1,3 +1,3 @@
 # portfolio
 
-Refactor d3 in skills.js
+updated resume 2025
